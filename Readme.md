@@ -2,4 +2,4 @@
 
 ## Scripts en Linux
 
-* wordpress_linux
+* wordpress_linux [Aqui](https://github.com/Lucho00Cuba/data/blob/main/wordpress_linux.zip)
