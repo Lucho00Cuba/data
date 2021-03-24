@@ -1,0 +1,1 @@
+# Script para Instalar Wordpress con XAMPP en Linux(Ubuntu)
