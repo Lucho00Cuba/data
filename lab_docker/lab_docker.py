@@ -17,14 +17,14 @@ def apps():
     Available pentest applications"
       dvwa              - Damn Vulnerable Web Application
       mutillidae        - OWASP Mutillidae II
-      juice-shop         - OWASP Juice Shop
+      juice-shop        - OWASP Juice Shop
     """)
 
 def start_app(name,port,app):
     print("Iniciando contenedor")
     if app == "dvwa":
         start_docker = subprocess.call(f'docker run -dit --name {name} -p {port}:80 vulnerables/web-dvwa', shell=True)
-    elif app == "multillidae":
+    elif app == "mutillidae":
         start_docker = subprocess.call(f'docker run -dit --name {name} -p {port}:80 szsecurity/mutillidae', shell=True)
     elif app == "juice-shop":
         start_docker = subprocess.call(f'docker run -dit --name {name} -p {port}:80 bkimminich/juice-shop', shell=True)
